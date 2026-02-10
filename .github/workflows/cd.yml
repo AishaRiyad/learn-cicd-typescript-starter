@@ -44,5 +44,6 @@ jobs:
             --region us-central1 \
             --allow-unauthenticated \
             --project notely-486922 \
-            --max-instances=4
+            --max-instances=4 \
+            --port=8080
 
