@@ -7,6 +7,7 @@
     "build": "tsc",
     "start": "node dist/main.js",
     "dev": "...",
+    "db:migrate": "drizzle-kit migrate",
     "test": "vitest --run",
     "lint": "eslint .",
     "format:write": "prettier --write \"src/**/*.{js,ts,json,css,md}\"",
@@ -46,3 +47,4 @@
     "singleQuote": false
   }
 }
+
