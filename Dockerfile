@@ -7,5 +7,9 @@ RUN npm ci
 
 COPY . .
 
-CMD ["npm", "run", "dev"]
-	
+RUN npm run build
+
+ENV NODE_ENV=production
+
+CMD ["npm", "run", "start"]
+
