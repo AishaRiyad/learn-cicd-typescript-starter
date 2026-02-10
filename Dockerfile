@@ -2,10 +2,10 @@ FROM --platform=linux/amd64 node:22-slim
 
 WORKDIR /usr/src/app
 
-ADD . .
-
+COPY package*.json ./
 RUN npm ci
 
-RUN npm run build
+COPY . .
 
-CMD ["node", "dist/main.js"]
+CMD ["npm", "run", "dev"]
+	
